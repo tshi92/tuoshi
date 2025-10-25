@@ -99,19 +99,19 @@ ul {
 }
 
 .conference-tag {
-    display: block;
+    display: inline-block;
     padding: 3px 10px;
     background-color: #2d3e50;
     color: white;
     font-size: 0.6em;
     font-weight: bold;
     border-radius: 4px;
-    margin-right: 0px;
-    float: left;
-    margin-left: -120px;
-    width: 100px;
+    margin-right: 10px;
+    width: 110px;
     height: 35px;
     text-align: center;
+    line-height: 29px;
+    vertical-align: top;
 }
 
 .chap-publications li {
