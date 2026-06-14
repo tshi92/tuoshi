@@ -1,338 +1,384 @@
-
 <!doctype html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css?family=OxProto Nerd & display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuo Shi &ndash; Home</title>
-
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-
-    <link rel="stylesheet" href="page.css">
-    <style>
-        .nav-menu {
-            background-color: #2d3e50;
-            padding: 15px 0;
-            text-align: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .nav-menu a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 5px;
-            display: inline-block;
-            transition: background-color 0.3s;
-        }
-        .nav-menu a:hover {
-            background-color: #1a252f;
-        }
-        body {
-            padding-top: 60px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
- <!-- Navigation Menu -->
-<div class="nav-menu">
-    <a href="#publications">PUBLICATIONS</a>
-    <a href="#teaching">TEACHING</a>
-    <a href="#fundings">FUNDINGS</a>
-    <a href="#research-talk">RESEARCH TALK</a>
-    <a href="#service">SERVICE</a>
-    <a href="#awards">AWARDS</a>
-</div>
-
-<div id="layout" class="pure-g">
-    <div class="sidebar pure-u-1 pure-u-md-1-4">
-           <h1 class="side-title">Tuo Shi</h1>
-           <div class="pure-u-1" style="text-align: center;">
-                <img class="pure-img-responsive" src="img/TuoShi.jpg" width="200" height="200" style="display: inline-block;">
-           </div>
-            <h3 class="side-tagline"> <b>Postdoctoral Researcher</b> </h3>
-            <h4 class="side-tagline">
-              Department of Computer Science <br/>
-              Aalto University <br/> <br/>
-            </h4>
-
-            <h4 class="side-tagline">  
-             <b>Email</b> <br/>  
-             tuo.shi [AT] aalto.fi <br/><br/>
-            <b>Address</b> <br/>
-            Konemiehentie 2, <br/>    
-            Espoo, Finland  <br/> 
-           </h4> 
+<!-- ===================== TOP LINK BAR ===================== -->
+<header class="topbar">
+    <div class="wrap">
+        <span class="label">Links</span>
+        <a href="https://scholar.google.com/citations?user=KIZjoPEAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <!-- TODO: replace # with your real ORCID URL -->
+        <a href="#" target="_blank" rel="noopener">ORCID</a>
     </div>
- 
-    <div class="content pure-u-1 pure-u-md-3-4">  
-        <div>
-          <br/><div style="text-align: justify;font-size: 20px;">Hi, I am <b>Tuo Shi</b>, now a postdoctoral researcher at the Department of Computer Science, Aalto University, supervised by <a href="https://users.aalto.fi/~difram1/" target="_blank">Prof. Mario Di Francesco</a> and <a href="https://zbjob.github.io/" target="_blank"> Prof. Bo Zhao</a>. Previously, I was a postdoctoral researcher at the Department of Computer Science, City University of Hong Kong, supervised by <a href="https://www.cs.cityu.edu.hk/~jianwang/" target="blank" >Prof. Jianping Wang</a>. Before that, I was an associate research fellow at the College of Intelligence and Computing, Tianjin University. I received my PhD degree in Computer Science (in 2021) from the Massive Data Computing Lab, Harbin Institute of Technology, advised by <a href="https://scholar.google.com/citations?user=RLFOrxsAAAAJ&hl=en" target="blank">Prof. Jianzhong Li</a>. I also worked as a visiting student at George Washington University from 2019 to 2020, advised by <a href="https://scholar.google.com/citations?user=O1yGhH0AAAAJ&hl=en" target="blank">Prof. Xiuzhen Cheng</a>.
-          </div><br />
+</header>
 
-          <br /> <div style="text-align: justify; margin-bottom: 20px; font-size: 20px;">My research focuses on <b>resource-efficient computing</b> for intelligent systems across <b>diverse hardware and system scales</b>, ranging from highly constrained edge devices, through real-time autonomous platforms, to large-scale machine learning infrastructures.</div>
+<main class="wrap">
 
-<div style="text-align: justify; font-size: 20px;">I investigate how to deliver reliable intelligence through <b>theoretical modeling</b> and <b>system design</b>, addressing diverse efficiency and performance trade-offs across energy, latency, resource utilization, and scalability.</div>
+    <!-- ===================== HERO / PERSONAL INFO ===================== -->
+    <section class="hero">
+        <h1 class="hero-name">Tuo Shi</h1>
+        <p class="hero-role"><b>Postdoctoral Researcher</b> &middot; Department of Computer Science, Aalto University</p>
 
-<br/>
+        <div class="hero-grid">
+            <!-- left: photo + contact -->
+            <div class="hero-left">
+                <img class="hero-photo" src="img/TuoShi.jpg" alt="Tuo Shi">
+                <div class="contact">
+                    <div class="c-row">
+                        <span class="c-label">Email</span>
+                        <span class="c-val">tuo.shi [AT] aalto.fi</span>
+                    </div>
+                    <div class="c-row">
+                        <span class="c-label">Address</span>
+                        <span class="c-val">Konemiehentie 2,<br>Espoo, Finland</span>
+                    </div>
+                </div>
+            </div>
 
-<br/>
+            <!-- right: self introduction + news -->
+            <div class="hero-right">
+                <div class="intro">
+                    <p>Hi, I am <b>Tuo Shi</b>, now a postdoctoral researcher at the Department of Computer
+                    Science, Aalto University, supervised by
+                    <a href="https://users.aalto.fi/~difram1/" target="_blank" rel="noopener">Prof. Mario Di Francesco</a>
+                    and <a href="https://zbjob.github.io/" target="_blank" rel="noopener">Prof. Bo Zhao</a>.
+                    Previously, I was a postdoctoral researcher at the Department of Computer Science,
+                    City University of Hong Kong, supervised by
+                    <a href="https://www.cs.cityu.edu.hk/~jianwang/" target="_blank" rel="noopener">Prof. Jianping Wang</a>.
+                    Before that, I was an associate research fellow at the College of Intelligence and
+                    Computing, Tianjin University.</p>
 
+                    <p>I received my PhD degree in Computer Science (in 2021) from the Massive Data Computing
+                    Lab, Harbin Institute of Technology, advised by
+                    <a href="https://scholar.google.com/citations?user=RLFOrxsAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Jianzhong Li</a>.
+                    I also worked as a visiting student at George Washington University from 2019 to 2020,
+                    advised by <a href="https://scholar.google.com/citations?user=O1yGhH0AAAAJ&hl=en" target="_blank" rel="noopener">Prof. Xiuzhen Cheng</a>.</p>
+                </div>
 
-
-<div class="posts" id="publications">
-  <h2>PUBLICATIONS <span style="font-size: smaller;"><a href="https://scholar.google.com/citations?user=KIZjoPEAAAAJ&hl=en" target="_blank">(Google Scholar)</a></span></h2>
-
-  <section class="chap">
-      <div class="chap-publications">
-        <!-- <big><b style="color:red">NEW! </b> -->
-
-<!-- <h3> Preprint </h3>
-        <ul>
-          <li> <a href="https://arxiv.org/pdf/2507.04872" title="">SHARP: Shared State Reduction for Efficient Matching of Sequential Patterns</a> <br/>
-            <i>Pre-print in arXiv</i> <b>(2025)</b> <br/>
-            Cong Yu, <b>Tuo Shi</b>, Matthias Weidlich, Bo Zhao
-          </li>
-          <br />
-        </ul> -->
-<h3> Selected Conference Papers </h3>
-        <ul>
-
-          <li><span class="conference-tag">VLDB'26</span> <a href="https://arxiv.org/pdf/2507.04872" title="">SHARP: Shared State Reduction for Efficient Matching of Sequential Patterns</a> <br/>
-            <i>Proceedings of the VLDB Endowment </i> <b>(VLDB 2026)</b> <br/>
-            Cong Yu, <b>Tuo Shi</b> <i>(co-first author)</i>, Matthias Weidlich, Bo Zhao
-          </li>
-          <br />
-
-          <li> <span class="conference-tag">SAA'25</span><a  href="https://arxiv.org/abs/2510.05943" title="">EARL: Efficient Agentic Reinforcement Learning Systems for Large Language Models.</a> <br/>
-            <i>Workshop on Systems for Agentic AI, in conjunction with the ACM Symposium on Operating Systems Principles</i> <b>(SAA 2025)</b> <br/>
-            Zheyue Tan, Mustapha Abdullahi, <b>Tuo Shi</b>, Huining Yuan, Zelai Xu, Chao Yu, Boxun Li, Bo Zhao
-           </li>
-           <br />
-
-          <li> <span class="conference-tag">INFOCOM'25</span><a  href="https://ieeexplore.ieee.org/abstract/document/11044491" title="">Designing and Implementing AoI-Optimized Scheduling for Autonomous Driving Systems.</a> <br/>
-            <i>IEEE International Conference on Computer Communications</i> <b>(INFOCOM 2025)</b> <br/>
-            Chen Tang, <strong>Tuo Shi</strong>, Qian Xu, Kui Wu, Nan Guan, Jen-Ming Wu, Jianping Wang 
-           </li>
-           <br />
-
-        
-          <li> <span class="conference-tag">INFOCOM'24</span><a  href="https://ieeexplore.ieee.org/abstract/document/10621120" title="">Minimizing Latency for Multi-DNN Inference on Resource-Limited CPU-Only Edge Devices.</a> <br/>
-           <i>IEEE International Conference on Computer Communications</i> <b>(INFOCOM 2024)</b> <br/>
-           Tao Wang, <b>Tuo Shi</b> <i>(corresponding author)</i>, Xiulong Liu, Jianping Wang, Bin Liu, Yechao She
-          </li>
-
-          <br />
-
-          <li> <span class="conference-tag">ICDCS'22</span><a  href="https://ieeexplore.ieee.org/abstract/document/9912252" title="">Query Recombination: To Process a Large Number of Concurrent Top-k Queries towards IoT Data on an Edge Server.</a> <br/>
-            <i>IEEE International Conference on Distributed Computing Systems</i> <b>(ICDCS 2022)</b> <br/>
-            <b>Tuo Shi</b>, Zhipeng Cai, Yingshu Li
-          </li>
-
-          <br />
-
-          <li> <span class="conference-tag">ICDCS'19</span><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8885295" title="">The energy-data dual coverage in battery-free sensor networks.</a> <br/>
-            <i>IEEE International Conference on Distributed Computing Systems</i> <b>(ICDCS 2019)</b> <br/>
-            <b>Tuo Shi</b>, Zhipeng Cai, Jianzhong Li, Hong Gao
-          </li>
-
-          <br />
-
-          <li>  <span class="conference-tag">INFOCOM'18</span><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8485808" title="">Coverage in battery-free wireless sensor networks.</a> <br/>
-            <i>IEEE International Conference on Computer Communications</i> <b>(INFOCOM 2018)</b> <br/>
-            <b>Tuo Shi</b>, Jianzhong Li, Hong Gao, Zhipeng Cai
-          </li>
-
-          <br />
-
-          <li>  <span class="conference-tag">INFOCOM'17</span><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8057073">Constructing connected dominating sets in battery-free networks.</a> <br/>
-            <i>IEEE International Conference on Computer Communications</i> <b>(INFOCOM 2017)</b> <br/>
-            <b>Tuo Shi</b>, Siyao Cheng, Jianzhong Li, Hong Gao, Zhipeng Cai
-          </li>
-
-          <br />
-
-          <li> <span class="conference-tag">INFOCOM'16</span><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7524504" title="">Adaptive connected dominating set discovering algorithm in energy-harvest sensor networks.</a> <br/>
-            <i>IEEE International Conference on Computer Communications</i> <b>(INFOCOM 2016)</b> <br/>
-            <b>Tuo Shi</b>, Siyao Cheng, Zhipeng Cai, Yingshu Li, Jianzhong Li
-          </li>
-         
-      </ul>
-      <h3>Selected Journal Papers </h3> 
-      <ul>
-        <li> <span class="conference-tag">TVT'24</span><a  href=https://ieeexplore.ieee.org/abstract/document/10738401 title="">Enhancing the Safety of Autonomous Driving Systems Via AoI-Optimized Task Scheduling.</a> <br/>
-          <i>IEEE Transactions on Vehicular Technology</i> <b>(TVT 2024)</b> <br/>
-          <b>Tuo Shi</b>, Qian Xu, Jianping Wang, Chenyuan Xu, Kui Wu, Kejie Lu, Chunming Qiao
-        </li>    
-        <br/>
-        
-        <li> <span class="conference-tag">TMC'24</span><a  href=https://ieeexplore.ieee.org/abstract/document/9940578 title="">An Efficient Processing Scheme for Concurrent Applications in the IoT Edge.</a> <br/>
-          <i>IEEE Transactions on Mobile Computing</i> <b>(TMC 2024)</b> <br/>
-          <b>Tuo Shi</b>, Zhipeng Cai, Jianzhong Li, Hong Gao, Tie Qiu
-        </li>    
-        <br/>
-
-        <li> <span class="conference-tag">IOT-J'23</span><a  href=https://ieeexplore.ieee.org/abstract/document/9951052 title="">Battery-Free Wireless Sensor Networks: A Comprehensive Survey.</a> <br/>
-          <i>IEEE Internet of Things Journal</i> <b>(IOT-J 2023)</b> <br/>
-          Zhipeng Cai, Quan Chen, <b>Tuo Shi</b>, Tongxin Zhu, Kunyi Chen, Yingshu Li
-        </li>    
-
-        <br/>
-
-        <li> <span class="conference-tag">TNET'22</span><a  href=https://ieeexplore.ieee.org/abstract/document/9855450 title="">Services Management and Distributed Multihop Requests Routing in Mobile Edge Networks.</a> <br/>
-        <i>IEEE/ACM Transactions on Networking</i> <b>(TNET 2022)</b> <br/>
-          <b>Tuo Shi</b>, Zhipeng Cai, Jianzhong Li, Hong Gao, Jiancheng Chen, Ming Yang
-        </li>    
-        <br/>
-
-        <li> <span class="conference-tag">TOSN'21</span><a  href=https://dl.acm.org/doi/pdf/10.1145/3457123 title="">Joint Deployment Strategy of Battery-Free Sensor Networks with Coverage Guarantee. </a> <br/>
-        <i>ACM Transactions on Sensor Networks</i> <b>(TOSN 2021)</b> <br/>
-        <b>Tuo Shi</b>, Zhipeng Cai, Jianzhong Li, Hong Gao
-        </li>    
-        <br/>
-
-        <li> <span class="conference-tag">IOT-J'20</span><a  href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9206577" title="">Distributed Query Processing in the Edge-Assisted IoT Data Monitoring System.</a> <br/>
-        <i>IEEE Internet of Things Journal</i> <b>(IOT-J 2020)</b> <br/>
-          Zhipeng Cai, <b>Tuo Shi</b>
-        </li>
-        <br/>
-
-        <li> <span class="conference-tag">TMC'20</span><a  href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9177292" title="">A novel framework for the coverage problem in battery-free wireless sensor networks.</a> <br/>
-        <i>IEEE Transactions on Mobile Computing</i> <b>(TMC 2020)</b> <br/>
-            <b>Tuo Shi</b>, Jianzhong Li, Hong Gao, Zhipeng Cai
-        </li>
-        <br />
-
-        <li> <span class="conference-tag">TOSN'19</span><a  href="https://dl.acm.org/doi/pdf/10.1145/3352486" title="">Dominating sets construction in RF-based battery-free sensor networks with full coverage guarantee.</a> <br/>
-        <i>ACM Transactions on Sensor Networks</i> <b>(TOSN 2019)</b> <br/>
-          <b>Tuo Shi</b>, Siyao Cheng, Jianzhong Li, Hong Gao, Zhipeng Cai
-        </li>
-        <br />
-
-        <li>  <span class="conference-tag">IOT-J'18</span><a href="https://ieeexplore.ieee.org/ielaam/6488907/8738925/8486629-aam.pdf">Task scheduling in deadline-aware mobile edge computing systems.</a> <br/>
-        <i>IEEE Internet of Things Journal</i> <b>(IOT-J 2018)</b> <br/>
-          Tongxin Zhu, <b>Tuo Shi</b>, Jianzhong Li, Zhipeng Cai, Xun Zhou
-        </li>
-        <br />
-
-        <li>  <span class="conference-tag">TNET'17</span><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7857833">Exploring connected dominating sets in energy harvest networks.</a> <br/>
-        <i>IEEE/ACM Transactions on Networking</i> <b>(TNET 2017)</b> <br/>
-          <b>Tuo Shi</b>, Siyao Cheng, Jianzhong Li, Zhipeng Cai
-        </li>
-        <br />
-    </ul>   
-
-      </div>
-  </section>
-
-  </div>
-
-<div class="posts" id="teaching">
-    <h2>TEACHING</h2>
-    <div class="chap-description">
-        <ul>
-          <li> Fall 2024-2025. CS-E4780 Scalable Systems and Data Management, Aalto University. (Co-teacher)
-          <li> Fall 2022. Operating System. Tianjin University. (Teaching Assistant)
-          <li> Fall 2018. Database Management. Harbin Institute of Technology. (Teaching Assistant)
-          <li> Spring 2016-2017. Computational Complexity. Harbin Institute of Technology. (Teaching Assistant)
-          <li> Fall 2015. Data Structure. Harbin Institute of Technology. (Teaching Assistant)
-          <li> Spring 2014. Compiler Principles. Harbin Institute of Technology. (Teaching Assistant)
-        </ul>
-        <h3>Student Supervision</h3>
-        <ul>
-          <li> Master thesis project on "Observability in Machine Learning Systems Using eBPF", Mr. Ingi Þór Sigurðsson, January 2025-August 2025, Aalto University, Finland. (Co-Supervisor)
-          <li> Master thesis project on "Performances and Trade-offs between Real-Time and Micro-Batch Distributed Stream Processing Systems in Stateful and Stateless Processing", Mr. Binh Pham, December 2024-June 2025, Aalto University, Finland. (Co-Supervisor)
-          <li> Master thesis project on "Research on General DNN Inference Optimization Techniques for Resource-Constrained Edge Devices", Mr. Tao Wang, September 2022-June 2024, Tianjin University, China. (Supervisor) (The results have been published in IEEE INFOCOM 2024.)
-        </ul>
-    </div>
-</div>
-
-    <div class="posts" id="fundings">
-        <h2>FUNDINGS</h2>
-        <div class="chap-description">
-        <ul>
-        <li> <i>IoT Data Enhanced DNN Inference in Collaborative Edge Computing.</i> <b>CCF-Baidu Open Fund, PI,</b> Aug. 2021 – Aug. 2022.
-        </li>    
-        </ul>
+                <!-- News (placeholder items — edit freely) -->
+                <div class="news">
+                    <h3>News</h3>
+                    <ul>
+                        <li><span class="date">2026</span><span>Our paper <i>SHARP</i> is accepted to <b>VLDB 2026</b>.</span></li>
+                        <li><span class="date">Oct 2025</span><span>Our paper <i>EARL</i> appears at the <b>SOSP&nbsp;2025</b> Workshop on Systems for Agentic AI.</span></li>
+                        <li><span class="date">May 2025</span><span>Invited talk at the <b>Helsinki CS Theory Seminar</b>, Aalto University.</span></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <ul>
-          <li> <i>Resources Allocation in Edge Servers for the Sensory Data Query. </i> <b>Young Scientists Fund of the National Natural Science Foundation of China, PI,</b> Jan. 2023-Dec. 2025.
-          </li>    
-        </ul>
-    </div>
+    </section>
 
-<div class="posts" id="research-talk">
-    <h2>RESEARCH TALK</h2>
-    <div class="chap-description">
-        <ul>
-          <li> May 2025: Invited Talk at Helsinki CS Theory Seminar. <i>Machine Learning Task Processing Under Resource Constraints</i>. Aalto University, Finland.
-          <li> August 2024: Invited talk at China Database Strategic Seminar Series. <i>Task processing on Resource limited Edge networks</i>. Virtual Event, China.
-          <li> November 2022: Invited talk at the International Conference on Advanced Cloud and Big Data. <i>Service Placement and Task Processing in Edge Computing</i>. China.
-          <li> July 2022: International Conference on Distributed Computing Systems (ICDCS). <i>Query recombination: To process a large number of concurrent top-k queries towards IoT data on an edge server</i>. Virtual Event, Bologna, Italy.
-          <li> July 2022: Invited talk at Young Scholars Forum on IoT Big Data Processing, Virtual Event, China.
-          <li> July 2019: International Conference on Distributed Computing Systems (ICDCS). <i>The energy-data dual coverage in battery-free sensor networks</i>. Dallas, USA.
-          <li> May 2018: IEEE Conference on Computer Communications (INFOCOM). <i>Coverage in battery-free wireless sensor networks</i>. Honolulu, USA.
-          <li> May 2017: IEEE Conference on Computer Communications (INFOCOM). <i>Constructing connected dominating sets in battery-free networks</i>. Atlanta, USA.
-          <li> May 2016: IEEE Conference on Computer Communications (INFOCOM). <i>Adaptive connected dominating set discovering algorithm in energy-harvest sensor networks</i>. San Francisco, USA.
-        </ul>
-    </div> 
-</div>
+    <hr class="divider">
 
-<div class="posts" id="service">
-    <h2>SERVICE</h2>
-    <div class="chap-description">
-        <h3>Program Committees</h3>
-        <ul>
-        <li> ACM International Conference on Information and Knowledge Management, (CIKM 2024)
-        <li> International Workshop on Databases and Machine Learning, (DBML 2023, 2024)
-        <li> IEEE International Conference on Sensing, Communication, and Networking, (SECON 2022, 2023, 2024, 2026)
-        <li> International Conference on Wireless Algorithms, Systems, and Applications, (WASA 2021, 2022)
-        </ul>
-        <h3>Peer Review</h3>
-        <ul>
-        <li> IEEE Transactions on Mobile Computing (TMC)
-        <li> ACM/IEEE Transactions on Networking (TON)
-        <li> IEEE Transactions on Knowledge and Data Engineering (TKDE)
-        <li> IEEE Transactions on Parallel and Distributed Systems (TPDS)
-        <li> IEEE Transactions on Vehicular Technology (TVT)
-        <li> IEEE Transactions on Wireless Communications (TWC)
-        <li> IEEE Internet of Things Journal (IOT-J)
-        <li> IEEE Transactions on Network Science and Engineering (TNSE)
-        <li> IEEE Transactions on Sensor Networks (TOSN)
-        </ul>
-    </div>
-</div>
+    <!-- ===================== RESEARCH INTERESTS ===================== -->
+    <section class="section" id="research">
+        <h2 class="section-title">Research Interests</h2>
+        <div class="research-grid">
+            <div class="research-text">
+                <p>My research focuses on <b>resource-efficient computing</b> for intelligent systems across
+                <b>diverse hardware and system scales</b>, ranging from highly constrained edge devices,
+                through real-time autonomous platforms, to large-scale machine learning infrastructures.</p>
 
-<div class="posts" id="awards">
-          <h2>AWARDS</h2>
-          <div class="chap-description">
-          <ul>
-          <li> 2024 <b>CIKM Distinguished Reviewer Award</b> 
-          <li> 2022 <b>ACM SIGCOMM China Doctoral Dissertation Award</b> 
-          <li> 2021 <b>Outstanding Ph.D. Graduate in Harbin Institute of Technology</b> 
-          <li> 2019 <b>Baidu Scholarship Top 20</b> 
-          <li> 2018 <b>National Scholarship for Ph.D. candidate</b>
-          <li> 2015 <b>National Scholarship for Ph.D. candidate</b>
+                <p>I investigate how to deliver reliable intelligence through <b>theoretical modeling</b>
+                and <b>system design</b>, addressing diverse efficiency and performance trade-offs across
+                energy, latency, resource utilization, and scalability.</p>
+            </div>
 
-          </ul>
-          </div>
+            <!-- Dynamic figure: relationship across my research scope -->
+            <div class="research-fig">
+                <svg viewBox="0 0 480 360" role="img" aria-label="Research scope diagram">
+                    <style>
+                        .link  { fill: none; stroke: #3d92c9; stroke-width: 2.2;
+                                 stroke-dasharray: 6 8; animation: flow 1.6s linear infinite; }
+                        @keyframes flow { to { stroke-dashoffset: -28; } }
+                        .float { animation: float 6s ease-in-out infinite; transform-box: fill-box;
+                                 transform-origin: center; }
+                        .float.b { animation-delay: -2s; }
+                        .float.c { animation-delay: -4s; }
+                        @keyframes float { 0%,100% { transform: translateY(0); }
+                                           50% { transform: translateY(-6px); } }
+                        .node    { fill: #fff; stroke: #b0cadb; stroke-width: 1.5; }
+                        .core    { fill: #2d3e50; }
+                        .lbl     { font: 600 13px -apple-system, 'Segoe UI', sans-serif; fill: #2d3e50;
+                                   text-anchor: middle; }
+                        .lbl.sm  { font-size: 11px; fill: #5b6675; font-weight: 500; }
+                        .lbl.w   { fill: #fff; }
+                    </style>
 
-      </div>
+                    <!-- connecting links (center -> pillars) -->
+                    <path class="link" d="M240 180 L95 90"/>
+                    <path class="link" d="M240 180 L385 90"/>
+                    <path class="link" d="M240 180 L240 305"/>
 
+                    <!-- pulsing halos -->
+                    <circle cx="95"  cy="90"  r="6" fill="#3d92c9" opacity="0.5">
+                        <animate attributeName="r" values="6;14;6" dur="2.6s" repeatCount="indefinite"/>
+                        <animate attributeName="opacity" values="0.5;0;0.5" dur="2.6s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="385" cy="90"  r="6" fill="#3d92c9" opacity="0.5">
+                        <animate attributeName="r" values="6;14;6" dur="2.6s" begin="-0.9s" repeatCount="indefinite"/>
+                        <animate attributeName="opacity" values="0.5;0;0.5" dur="2.6s" begin="-0.9s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="240" cy="305" r="6" fill="#3d92c9" opacity="0.5">
+                        <animate attributeName="r" values="6;14;6" dur="2.6s" begin="-1.7s" repeatCount="indefinite"/>
+                        <animate attributeName="opacity" values="0.5;0;0.5" dur="2.6s" begin="-1.7s" repeatCount="indefinite"/>
+                    </circle>
+
+                    <!-- pillar nodes -->
+                    <g class="float">
+                        <rect class="node" x="22"  y="62"  width="146" height="56" rx="12"/>
+                        <text class="lbl"    x="95"  y="86">Constrained</text>
+                        <text class="lbl sm" x="95"  y="103">Edge Devices</text>
+                    </g>
+                    <g class="float b">
+                        <rect class="node" x="312" y="62"  width="146" height="56" rx="12"/>
+                        <text class="lbl"    x="385" y="86">Real-Time</text>
+                        <text class="lbl sm" x="385" y="103">Autonomous Platforms</text>
+                    </g>
+                    <g class="float c">
+                        <rect class="node" x="167" y="278" width="146" height="56" rx="12"/>
+                        <text class="lbl"    x="240" y="302">Large-Scale</text>
+                        <text class="lbl sm" x="240" y="319">ML Infrastructure</text>
+                    </g>
+
+                    <!-- core node -->
+                    <g>
+                        <rect class="node core" x="142" y="150" width="196" height="60" rx="14"/>
+                        <text class="lbl w"    x="240" y="176">Resource-Efficient</text>
+                        <text class="lbl w sm" style="fill:#b0cadb" x="240" y="194">Computing</text>
+                    </g>
+                </svg>
+            </div>
         </div>
-    </div>
-</div>
+    </section>
 
+    <hr class="divider">
+
+    <!-- ===================== TABBED MODULES ===================== -->
+    <section class="section" id="modules">
+        <nav class="tabs-nav">
+            <button class="tab-btn active" data-tab="publications">Publications</button>
+            <button class="tab-btn" data-tab="projects">Projects</button>
+            <button class="tab-btn" data-tab="teaching">Teaching &amp; Supervision</button>
+            <button class="tab-btn" data-tab="talks">Talks</button>
+            <button class="tab-btn" data-tab="service">Service</button>
+            <button class="tab-btn" data-tab="awards">Awards</button>
+        </nav>
+
+        <!-- ---------- Publications ---------- -->
+        <div class="tab-panel active" id="publications">
+            <h3>Selected Conference Papers
+                <a class="muted-link" href="https://scholar.google.com/citations?user=KIZjoPEAAAAJ&hl=en" target="_blank" rel="noopener">(Google Scholar)</a>
+            </h3>
+            <ul class="pub-list">
+                <li><span class="conference-tag">VLDB'26</span>
+                    <a href="https://arxiv.org/pdf/2507.04872" target="_blank" rel="noopener">SHARP: Shared State Reduction for Efficient Matching of Sequential Patterns</a><br>
+                    <span class="venue">Proceedings of the VLDB Endowment (VLDB 2026)</span><br>
+                    <span class="authors">Cong Yu, <b>Tuo Shi</b> <i>(co-first author)</i>, Matthias Weidlich, Bo Zhao</span>
+                </li>
+                <li><span class="conference-tag">SAA'25</span>
+                    <a href="https://arxiv.org/abs/2510.05943" target="_blank" rel="noopener">EARL: Efficient Agentic Reinforcement Learning Systems for Large Language Models</a><br>
+                    <span class="venue">Workshop on Systems for Agentic AI @ ACM SOSP (SAA 2025)</span><br>
+                    <span class="authors">Zheyue Tan, Mustapha Abdullahi, <b>Tuo Shi</b>, Huining Yuan, Zelai Xu, Chao Yu, Boxun Li, Bo Zhao</span>
+                </li>
+                <li><span class="conference-tag">INFOCOM'25</span>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/11044491" target="_blank" rel="noopener">Designing and Implementing AoI-Optimized Scheduling for Autonomous Driving Systems</a><br>
+                    <span class="venue">IEEE International Conference on Computer Communications (INFOCOM 2025)</span><br>
+                    <span class="authors">Chen Tang, <b>Tuo Shi</b>, Qian Xu, Kui Wu, Nan Guan, Jen-Ming Wu, Jianping Wang</span>
+                </li>
+                <li><span class="conference-tag">INFOCOM'24</span>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/10621120" target="_blank" rel="noopener">Minimizing Latency for Multi-DNN Inference on Resource-Limited CPU-Only Edge Devices</a><br>
+                    <span class="venue">IEEE International Conference on Computer Communications (INFOCOM 2024)</span><br>
+                    <span class="authors">Tao Wang, <b>Tuo Shi</b> <i>(corresponding author)</i>, Xiulong Liu, Jianping Wang, Bin Liu, Yechao She</span>
+                </li>
+                <li><span class="conference-tag">ICDCS'22</span>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/9912252" target="_blank" rel="noopener">Query Recombination: To Process a Large Number of Concurrent Top-k Queries towards IoT Data on an Edge Server</a><br>
+                    <span class="venue">IEEE International Conference on Distributed Computing Systems (ICDCS 2022)</span><br>
+                    <span class="authors"><b>Tuo Shi</b>, Zhipeng Cai, Yingshu Li</span>
+                </li>
+                <li><span class="conference-tag">ICDCS'19</span>
+                    <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8885295" target="_blank" rel="noopener">The Energy-Data Dual Coverage in Battery-Free Sensor Networks</a><br>
+                    <span class="venue">IEEE International Conference on Distributed Computing Systems (ICDCS 2019)</span><br>
+                    <span class="authors"><b>Tuo Shi</b>, Zhipeng Cai, Jianzhong Li, Hong Gao</span>
+                </li>
+                <li><span class="conference-tag">INFOCOM'18</span>
+                    <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8485808" target="_blank" rel="noopener">Coverage in Battery-Free Wireless Sensor Networks</a><br>
+                    <span class="venue">IEEE International Conference on Computer Communications (INFOCOM 2018)</span><br>
+                    <span class="authors"><b>Tuo Shi</b>, Jianzhong Li, Hong Gao, Zhipeng Cai</span>
+                </li>
+                <li><span class="conference-tag">INFOCOM'17</span>
+                    <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8057073" target="_blank" rel="noopener">Constructing Connected Dominating Sets in Battery-Free Networks</a><br>
+                    <span class="venue">IEEE International Conference on Computer Communications (INFOCOM 2017)</span><br>
+                    <span class="authors"><b>Tuo Shi</b>, Siyao Cheng, Jianzhong Li, Hong Gao, Zhipeng Cai</span>
+                </li>
+                <li><span class="conference-tag">INFOCOM'16</span>
+                    <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7524504" target="_blank" rel="noopener">Adaptive Connected Dominating Set Discovering Algorithm in Energy-Harvest Sensor Networks</a><br>
+                    <span class="venue">IEEE International Conference on Computer Communications (INFOCOM 2016)</span><br>
+                    <span class="authors"><b>Tuo Shi</b>, Siyao Cheng, Zhipeng Cai, Yingshu Li, Jianzhong Li</span>
+                </li>
+            </ul>
+
+            <h3>Selected Journal Papers</h3>
+            <ul class="pub-list">
+                <li><span class="conference-tag">TVT'24</span>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/10738401" target="_blank" rel="noopener">Enhancing the Safety of Autonomous Driving Systems Via AoI-Optimized Task Scheduling</a><br>
+                    <span class="venue">IEEE Transactions on Vehicular Technology (TVT 2024)</span><br>
+                    <span class="authors"><b>Tuo Shi</b>, Qian Xu, Jianping Wang, Chenyuan Xu, Kui Wu, Kejie Lu, Chunming Qiao</span>
+                </li>
+                <li><span class="conference-tag">TMC'24</span>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/9940578" target="_blank" rel="noopener">An Efficient Processing Scheme for Concurrent Applications in the IoT Edge</a><br>
+                    <span class="venue">IEEE Transactions on Mobile Computing (TMC 2024)</span><br>
+                    <span class="authors"><b>Tuo Shi</b>, Zhipeng Cai, Jianzhong Li, Hong Gao, Tie Qiu</span>
+                </li>
+                <li><span class="conference-tag">IOT-J'23</span>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/9951052" target="_blank" rel="noopener">Battery-Free Wireless Sensor Networks: A Comprehensive Survey</a><br>
+                    <span class="venue">IEEE Internet of Things Journal (IOT-J 2023)</span><br>
+                    <span class="authors">Zhipeng Cai, Quan Chen, <b>Tuo Shi</b>, Tongxin Zhu, Kunyi Chen, Yingshu Li</span>
+                </li>
+                <li><span class="conference-tag">TNET'22</span>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/9855450" target="_blank" rel="noopener">Services Management and Distributed Multihop Requests Routing in Mobile Edge Networks</a><br>
+                    <span class="venue">IEEE/ACM Transactions on Networking (TNET 2022)</span><br>
+                    <span class="authors"><b>Tuo Shi</b>, Zhipeng Cai, Jianzhong Li, Hong Gao, Jiancheng Chen, Ming Yang</span>
+                </li>
+                <li><span class="conference-tag">TOSN'21</span>
+                    <a href="https://dl.acm.org/doi/pdf/10.1145/3457123" target="_blank" rel="noopener">Joint Deployment Strategy of Battery-Free Sensor Networks with Coverage Guarantee</a><br>
+                    <span class="venue">ACM Transactions on Sensor Networks (TOSN 2021)</span><br>
+                    <span class="authors"><b>Tuo Shi</b>, Zhipeng Cai, Jianzhong Li, Hong Gao</span>
+                </li>
+                <li><span class="conference-tag">IOT-J'20</span>
+                    <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9206577" target="_blank" rel="noopener">Distributed Query Processing in the Edge-Assisted IoT Data Monitoring System</a><br>
+                    <span class="venue">IEEE Internet of Things Journal (IOT-J 2020)</span><br>
+                    <span class="authors">Zhipeng Cai, <b>Tuo Shi</b></span>
+                </li>
+                <li><span class="conference-tag">TMC'20</span>
+                    <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9177292" target="_blank" rel="noopener">A Novel Framework for the Coverage Problem in Battery-Free Wireless Sensor Networks</a><br>
+                    <span class="venue">IEEE Transactions on Mobile Computing (TMC 2020)</span><br>
+                    <span class="authors"><b>Tuo Shi</b>, Jianzhong Li, Hong Gao, Zhipeng Cai</span>
+                </li>
+                <li><span class="conference-tag">TOSN'19</span>
+                    <a href="https://dl.acm.org/doi/pdf/10.1145/3352486" target="_blank" rel="noopener">Dominating Sets Construction in RF-Based Battery-Free Sensor Networks with Full Coverage Guarantee</a><br>
+                    <span class="venue">ACM Transactions on Sensor Networks (TOSN 2019)</span><br>
+                    <span class="authors"><b>Tuo Shi</b>, Siyao Cheng, Jianzhong Li, Hong Gao, Zhipeng Cai</span>
+                </li>
+                <li><span class="conference-tag">IOT-J'18</span>
+                    <a href="https://ieeexplore.ieee.org/ielaam/6488907/8738925/8486629-aam.pdf" target="_blank" rel="noopener">Task Scheduling in Deadline-Aware Mobile Edge Computing Systems</a><br>
+                    <span class="venue">IEEE Internet of Things Journal (IOT-J 2018)</span><br>
+                    <span class="authors">Tongxin Zhu, <b>Tuo Shi</b>, Jianzhong Li, Zhipeng Cai, Xun Zhou</span>
+                </li>
+                <li><span class="conference-tag">TNET'17</span>
+                    <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7857833" target="_blank" rel="noopener">Exploring Connected Dominating Sets in Energy Harvest Networks</a><br>
+                    <span class="venue">IEEE/ACM Transactions on Networking (TNET 2017)</span><br>
+                    <span class="authors"><b>Tuo Shi</b>, Siyao Cheng, Jianzhong Li, Zhipeng Cai</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ---------- Projects (Fundings) ---------- -->
+        <div class="tab-panel" id="projects">
+            <ul class="plain-list">
+                <li><i>Resources Allocation in Edge Servers for the Sensory Data Query.</i>
+                    <b>Young Scientists Fund of the National Natural Science Foundation of China, PI</b>, Jan. 2023 &ndash; Dec. 2025.</li>
+                <li><i>IoT Data Enhanced DNN Inference in Collaborative Edge Computing.</i>
+                    <b>CCF-Baidu Open Fund, PI</b>, Aug. 2021 &ndash; Aug. 2022.</li>
+            </ul>
+        </div>
+
+        <!-- ---------- Teaching & Supervision ---------- -->
+        <div class="tab-panel" id="teaching">
+            <h3>Teaching</h3>
+            <ul class="plain-list">
+                <li>Fall 2024&ndash;2025. CS-E4780 Scalable Systems and Data Management, Aalto University. <i>(Co-teacher)</i></li>
+                <li>Fall 2022. Operating System, Tianjin University. <i>(Teaching Assistant)</i></li>
+                <li>Fall 2018. Database Management, Harbin Institute of Technology. <i>(Teaching Assistant)</i></li>
+                <li>Spring 2016&ndash;2017. Computational Complexity, Harbin Institute of Technology. <i>(Teaching Assistant)</i></li>
+                <li>Fall 2015. Data Structure, Harbin Institute of Technology. <i>(Teaching Assistant)</i></li>
+                <li>Spring 2014. Compiler Principles, Harbin Institute of Technology. <i>(Teaching Assistant)</i></li>
+            </ul>
+            <h3>Student Supervision</h3>
+            <ul class="plain-list">
+                <li>Master thesis on &ldquo;Observability in Machine Learning Systems Using eBPF&rdquo;, Mr. Ingi Þór Sigurðsson, Jan.&ndash;Aug. 2025, Aalto University, Finland. <i>(Co-Supervisor)</i></li>
+                <li>Master thesis on &ldquo;Performances and Trade-offs between Real-Time and Micro-Batch Distributed Stream Processing Systems&rdquo;, Mr. Binh Pham, Dec. 2024&ndash;Jun. 2025, Aalto University, Finland. <i>(Co-Supervisor)</i></li>
+                <li>Master thesis on &ldquo;Research on General DNN Inference Optimization Techniques for Resource-Constrained Edge Devices&rdquo;, Mr. Tao Wang, Sep. 2022&ndash;Jun. 2024, Tianjin University, China. <i>(Supervisor — results published at IEEE INFOCOM 2024)</i></li>
+            </ul>
+        </div>
+
+        <!-- ---------- Talks ---------- -->
+        <div class="tab-panel" id="talks">
+            <ul class="plain-list">
+                <li>May 2025: Invited Talk at Helsinki CS Theory Seminar. <i>Machine Learning Task Processing Under Resource Constraints</i>. Aalto University, Finland.</li>
+                <li>Aug. 2024: Invited Talk at China Database Strategic Seminar Series. <i>Task Processing on Resource-Limited Edge Networks</i>. Virtual Event, China.</li>
+                <li>Nov. 2022: Invited Talk at the International Conference on Advanced Cloud and Big Data. <i>Service Placement and Task Processing in Edge Computing</i>. China.</li>
+                <li>Jul. 2022: ICDCS. <i>Query Recombination: To Process a Large Number of Concurrent Top-k Queries towards IoT Data on an Edge Server</i>. Bologna, Italy (Virtual).</li>
+                <li>Jul. 2022: Invited Talk at Young Scholars Forum on IoT Big Data Processing. Virtual Event, China.</li>
+                <li>Jul. 2019: ICDCS. <i>The Energy-Data Dual Coverage in Battery-Free Sensor Networks</i>. Dallas, USA.</li>
+                <li>May 2018: INFOCOM. <i>Coverage in Battery-Free Wireless Sensor Networks</i>. Honolulu, USA.</li>
+                <li>May 2017: INFOCOM. <i>Constructing Connected Dominating Sets in Battery-Free Networks</i>. Atlanta, USA.</li>
+                <li>May 2016: INFOCOM. <i>Adaptive Connected Dominating Set Discovering Algorithm in Energy-Harvest Sensor Networks</i>. San Francisco, USA.</li>
+            </ul>
+        </div>
+
+        <!-- ---------- Service ---------- -->
+        <div class="tab-panel" id="service">
+            <h3>Program Committees</h3>
+            <ul class="plain-list">
+                <li>ACM International Conference on Information and Knowledge Management (CIKM 2024)</li>
+                <li>International Workshop on Databases and Machine Learning (DBML 2023, 2024)</li>
+                <li>IEEE International Conference on Sensing, Communication, and Networking (SECON 2022, 2023, 2024, 2026)</li>
+                <li>International Conference on Wireless Algorithms, Systems, and Applications (WASA 2021, 2022)</li>
+            </ul>
+            <h3>Peer Review</h3>
+            <ul class="plain-list">
+                <li>IEEE Transactions on Mobile Computing (TMC)</li>
+                <li>ACM/IEEE Transactions on Networking (TON)</li>
+                <li>IEEE Transactions on Knowledge and Data Engineering (TKDE)</li>
+                <li>IEEE Transactions on Parallel and Distributed Systems (TPDS)</li>
+                <li>IEEE Transactions on Vehicular Technology (TVT)</li>
+                <li>IEEE Transactions on Wireless Communications (TWC)</li>
+                <li>IEEE Internet of Things Journal (IOT-J)</li>
+                <li>IEEE Transactions on Network Science and Engineering (TNSE)</li>
+                <li>IEEE Transactions on Sensor Networks (TOSN)</li>
+            </ul>
+        </div>
+
+        <!-- ---------- Awards ---------- -->
+        <div class="tab-panel" id="awards">
+            <ul class="plain-list">
+                <li>2024 &mdash; <b>CIKM Distinguished Reviewer Award</b></li>
+                <li>2022 &mdash; <b>ACM SIGCOMM China Doctoral Dissertation Award</b></li>
+                <li>2021 &mdash; <b>Outstanding Ph.D. Graduate, Harbin Institute of Technology</b></li>
+                <li>2019 &mdash; <b>Baidu Scholarship (Top 20)</b></li>
+                <li>2018 &mdash; <b>National Scholarship for Ph.D. Candidate</b></li>
+                <li>2015 &mdash; <b>National Scholarship for Ph.D. Candidate</b></li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    &copy; <span id="year"></span> Tuo Shi &middot; Department of Computer Science, Aalto University
+</footer>
+
+<script>
+    // Tab switching
+    document.querySelectorAll('.tab-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var id = btn.getAttribute('data-tab');
+            document.querySelectorAll('.tab-btn').forEach(function (b) { b.classList.remove('active'); });
+            document.querySelectorAll('.tab-panel').forEach(function (p) { p.classList.remove('active'); });
+            btn.classList.add('active');
+            document.getElementById(id).classList.add('active');
+        });
+    });
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
