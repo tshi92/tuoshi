@@ -4,171 +4,163 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuo Shi &ndash; Home</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ===================== TOP LINK BAR ===================== -->
-<header class="topbar">
-    <div class="wrap">
-        <span class="label">Links</span>
-        <a href="https://scholar.google.com/citations?user=KIZjoPEAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-        <!-- TODO: replace # with your real ORCID URL -->
-        <a href="#" target="_blank" rel="noopener">ORCID</a>
-    </div>
-</header>
-
 <main class="wrap">
 
-    <!-- ===================== HERO / PERSONAL INFO ===================== -->
+    <!-- ===================== HEADER : photo + identity ===================== -->
     <section class="hero">
-        <h1 class="hero-name">Tuo Shi</h1>
-        <p class="hero-role"><b>Postdoctoral Researcher</b> &middot; Department of Computer Science, Aalto University</p>
-
         <div class="hero-grid">
-            <!-- left: photo + contact -->
             <div class="hero-left">
                 <img class="hero-photo" src="img/TuoShi.jpg" alt="Tuo Shi">
-                <div class="contact">
-                    <div class="c-row">
-                        <span class="c-label">Email</span>
-                        <span class="c-val">tuo.shi [AT] aalto.fi</span>
-                    </div>
-                    <div class="c-row">
-                        <span class="c-label">Address</span>
-                        <span class="c-val">Konemiehentie 2,<br>Espoo, Finland</span>
-                    </div>
-                </div>
             </div>
-
-            <!-- right: self introduction + news -->
             <div class="hero-right">
-                <div class="intro">
-                    <p>Hi, I am <b>Tuo Shi</b>, now a postdoctoral researcher at the Department of Computer
-                    Science, Aalto University, supervised by
-                    <a href="https://users.aalto.fi/~difram1/" target="_blank" rel="noopener">Prof. Mario Di Francesco</a>
-                    and <a href="https://zbjob.github.io/" target="_blank" rel="noopener">Prof. Bo Zhao</a>.
-                    Previously, I was a postdoctoral researcher at the Department of Computer Science,
-                    City University of Hong Kong, supervised by
-                    <a href="https://www.cs.cityu.edu.hk/~jianwang/" target="_blank" rel="noopener">Prof. Jianping Wang</a>.
-                    Before that, I was an associate research fellow at the College of Intelligence and
-                    Computing, Tianjin University.</p>
-
-                    <p>I received my PhD degree in Computer Science (in 2021) from the Massive Data Computing
-                    Lab, Harbin Institute of Technology, advised by
-                    <a href="https://scholar.google.com/citations?user=RLFOrxsAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Jianzhong Li</a>.
-                    I also worked as a visiting student at George Washington University from 2019 to 2020,
-                    advised by <a href="https://scholar.google.com/citations?user=O1yGhH0AAAAJ&hl=en" target="_blank" rel="noopener">Prof. Xiuzhen Cheng</a>.</p>
-                </div>
-
-                <!-- News (placeholder items — edit freely) -->
-                <div class="news">
-                    <h3>News</h3>
-                    <ul>
-                        <li><span class="date">2026</span><span>Our paper <i>SHARP</i> is accepted to <b>VLDB 2026</b>.</span></li>
-                        <li><span class="date">Oct 2025</span><span>Our paper <i>EARL</i> appears at the <b>SOSP&nbsp;2025</b> Workshop on Systems for Agentic AI.</span></li>
-                        <li><span class="date">May 2025</span><span>Invited talk at the <b>Helsinki CS Theory Seminar</b>, Aalto University.</span></li>
-                    </ul>
-                </div>
+                <h1 class="hero-name">Tuo Shi</h1>
+                <p class="role"><b>Postdoctoral Researcher</b></p>
+                <p class="affil">Department of Computer Science<br>Aalto University</p>
+                <p class="contact-line"><span class="m-label">Email:</span> tuo.shi [AT] aalto.fi</p>
+                <p class="contact-line"><span class="m-label">Address:</span> Konemiehentie 2, Espoo, Finland</p>
             </div>
+
+            <nav class="hero-links">
+                <a href="https://scholar.google.com/citations?user=KIZjoPEAAAAJ&hl=en" target="_blank" rel="noopener"><img class="li-ico" src="img/icons/googlescholar.svg" alt="">Google Scholar</a>
+                <a href="https://orcid.org/0000-0003-3685-2099" target="_blank" rel="noopener"><img class="li-ico" src="img/icons/orcid.svg" alt="">ORCID</a>
+                <!-- TODO: replace with your exact DBLP profile URL -->
+                <a href="https://dblp.org/search?q=Tuo+Shi" target="_blank" rel="noopener"><img class="li-ico" src="img/icons/dblp.svg" alt="">DBLP</a>
+                <a href="https://www.linkedin.com/in/tuo-shi-592245181" target="_blank" rel="noopener"><img class="li-ico" src="img/icons/linkedin.svg" alt="">LinkedIn</a>
+            </nav>
         </div>
     </section>
 
-    <hr class="divider">
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+        <h2 class="section-title">About</h2>
+        <div class="intro">
+            <p>Hi, I am <b>Tuo Shi</b>. I will join Shenzhen University of Advanced Technology（深圳理工大学）<img class="uni-logo" src="img/logos/suat.svg" alt="Shenzhen University of Advanced Technology">
+            as an Assistant Professor in August 2026. I am currently a postdoctoral researcher at the
+            Department of Computer Science, Aalto University<img class="uni-logo" src="img/logos/aalto.png" alt="Aalto University">, supervised by
+            <a href="https://users.aalto.fi/~difram1/" target="_blank" rel="noopener">Prof. Mario Di Francesco</a>
+            and <a href="https://zbjob.github.io/" target="_blank" rel="noopener">Prof. Bo Zhao</a>.
+            Previously, I was a postdoctoral researcher at the Department of Computer Science,
+            City University of Hong Kong<img class="uni-logo" src="img/logos/cityu.svg" alt="City University of Hong Kong">, supervised by
+            <a href="https://www.cs.cityu.edu.hk/~jianwang/" target="_blank" rel="noopener">Prof. Jianping Wang</a>.
+            Before that, I was an associate research fellow at the College of Intelligence and
+            Computing, Tianjin University<img class="uni-logo" src="img/logos/tju.svg" alt="Tianjin University">.</p>
+
+            <p>I received my PhD degree in Computer Science (in 2021) from the Massive Data Computing
+            Lab, Harbin Institute of Technology<img class="uni-logo" src="img/logos/hit.svg" alt="Harbin Institute of Technology">, advised by
+            <a href="https://scholar.google.com/citations?user=RLFOrxsAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Jianzhong Li</a>.
+            I also worked as a visiting student at George Washington University<img class="uni-logo" src="img/logos/gwu.png" alt="George Washington University"> from 2019 to 2020,
+            advised by <a href="https://scholar.google.com/citations?user=O1yGhH0AAAAJ&hl=en" target="_blank" rel="noopener">Prof. Xiuzhen Cheng</a>.</p>
+        </div>
+    </section>
+
+    <!-- ===================== NEWS ===================== -->
+    <section class="section" id="news">
+        <div class="news">
+            <h3>News</h3>
+            <ul>
+                <li><span class="date">Aug 2026</span><span>I will join <b>Shenzhen University of Advanced Technology</b>（深圳理工大学）as an Assistant Professor.</span></li>
+                <li><span class="date">Jan 2026</span><span>Our paper <i>SHARP</i> is accepted to <b>VLDB 2026</b>.</span></li>
+                <li><span class="date">Oct 2025</span><span>Our paper <i>EARL</i> appears at the <b>SOSP&nbsp;2025</b> Workshop on Systems for Agentic AI.</span></li>
+                <li><span class="date">May 2025</span><span>Invited talk at the <b>Helsinki CS Theory Seminar</b>, Aalto University.</span></li>
+            </ul>
+        </div>
+    </section>
 
     <!-- ===================== RESEARCH INTERESTS ===================== -->
     <section class="section" id="research">
         <h2 class="section-title">Research Interests</h2>
+        <div class="research-tags">
+            <span class="rtag">Mobile Computing</span>
+            <span class="rtag">MLSys</span>
+            <span class="rtag">LLM Infra</span>
+        </div>
         <div class="research-grid">
             <div class="research-text">
-                <p>My research focuses on <b>resource-efficient computing</b> for intelligent systems across
-                <b>diverse hardware and system scales</b>, ranging from highly constrained edge devices,
-                through real-time autonomous platforms, to large-scale machine learning infrastructures.</p>
+                <p>Standing at the intersection of machine learning and computer systems, I see intelligent
+                computing at a turning point. I aim to <i>build resource-aware intelligent systems</i> that unite
+                algorithmic intelligence with system-level orchestration, making AI more efficient, reliable,
+                and sustainable.</p>
 
-                <p>I investigate how to deliver reliable intelligence through <b>theoretical modeling</b>
-                and <b>system design</b>, addressing diverse efficiency and performance trade-offs across
-                energy, latency, resource utilization, and scalability.</p>
+                <p>Guided by this vision, <b>my research focuses on resource-efficient computing for intelligent
+                systems</b> across diverse hardware and system scales, ranging from <i>highly constrained edge
+                devices</i>, through <i>real-time autonomous platforms</i>, to <i>large-scale machine learning
+                infrastructures</i>.</p>
+
+                <p class="dir-lead">More concretely, my work centers on three directions:</p>
+                <ul class="dir-list">
+                    <li>
+                        <span class="dir-title">Efficient Agentic AI Systems</span>
+                        <span class="dir-sub">agent orchestration, multi-agent collaboration, scalable agent runtimes</span>
+                    </li>
+                    <li>
+                        <span class="dir-title">Edge Intelligence</span>
+                        <span class="dir-sub">on-device LLM inference, cloud&ndash;edge collaborative intelligence</span>
+                    </li>
+                    <li>
+                        <span class="dir-title">Efficient Autonomous Systems</span>
+                        <span class="dir-sub">autonomous driving, real-time embodied intelligence, energy-efficient autonomy</span>
+                    </li>
+                </ul>
             </div>
 
-            <!-- Dynamic figure: relationship across my research scope -->
-            <div class="research-fig">
-                <svg viewBox="0 0 480 360" role="img" aria-label="Research scope diagram">
-                    <style>
-                        .link  { fill: none; stroke: #3d92c9; stroke-width: 2.2;
-                                 stroke-dasharray: 6 8; animation: flow 1.6s linear infinite; }
-                        @keyframes flow { to { stroke-dashoffset: -28; } }
-                        .float { animation: float 6s ease-in-out infinite; transform-box: fill-box;
-                                 transform-origin: center; }
-                        .float.b { animation-delay: -2s; }
-                        .float.c { animation-delay: -4s; }
-                        @keyframes float { 0%,100% { transform: translateY(0); }
-                                           50% { transform: translateY(-6px); } }
-                        .node    { fill: #fff; stroke: #b0cadb; stroke-width: 1.5; }
-                        .core    { fill: #2d3e50; }
-                        .lbl     { font: 600 13px -apple-system, 'Segoe UI', sans-serif; fill: #2d3e50;
-                                   text-anchor: middle; }
-                        .lbl.sm  { font-size: 11px; fill: #5b6675; font-weight: 500; }
-                        .lbl.w   { fill: #fff; }
-                    </style>
+            <!-- Interactive scale-up stack (small at bottom, large on top) -->
+            <div class="scale-stack" id="scale-stack">
+                <div class="scale-axis">
+                    <span class="axis-label">Resource scale</span>
+                    <span class="axis-line"></span>
+                </div>
+                <div class="scale-blocks">
+                    <button class="scale-block" data-scale="large">
+                        <div class="sb-title">Large scale</div>
+                        <div class="sb-ex">GPU clusters, supercomputers</div>
+                    </button>
+                    <button class="scale-block" data-scale="moderate">
+                        <div class="sb-title">Moderate scale</div>
+                        <div class="sb-ex">Edge servers, autonomous platforms</div>
+                    </button>
+                    <button class="scale-block" data-scale="small">
+                        <div class="sb-title">Small scale</div>
+                        <div class="sb-ex">Sensor nodes, edge devices</div>
+                    </button>
+                </div>
 
-                    <!-- connecting links (center -> pillars) -->
-                    <path class="link" d="M240 180 L95 90"/>
-                    <path class="link" d="M240 180 L385 90"/>
-                    <path class="link" d="M240 180 L240 305"/>
-
-                    <!-- pulsing halos -->
-                    <circle cx="95"  cy="90"  r="6" fill="#3d92c9" opacity="0.5">
-                        <animate attributeName="r" values="6;14;6" dur="2.6s" repeatCount="indefinite"/>
-                        <animate attributeName="opacity" values="0.5;0;0.5" dur="2.6s" repeatCount="indefinite"/>
-                    </circle>
-                    <circle cx="385" cy="90"  r="6" fill="#3d92c9" opacity="0.5">
-                        <animate attributeName="r" values="6;14;6" dur="2.6s" begin="-0.9s" repeatCount="indefinite"/>
-                        <animate attributeName="opacity" values="0.5;0;0.5" dur="2.6s" begin="-0.9s" repeatCount="indefinite"/>
-                    </circle>
-                    <circle cx="240" cy="305" r="6" fill="#3d92c9" opacity="0.5">
-                        <animate attributeName="r" values="6;14;6" dur="2.6s" begin="-1.7s" repeatCount="indefinite"/>
-                        <animate attributeName="opacity" values="0.5;0;0.5" dur="2.6s" begin="-1.7s" repeatCount="indefinite"/>
-                    </circle>
-
-                    <!-- pillar nodes -->
-                    <g class="float">
-                        <rect class="node" x="22"  y="62"  width="146" height="56" rx="12"/>
-                        <text class="lbl"    x="95"  y="86">Constrained</text>
-                        <text class="lbl sm" x="95"  y="103">Edge Devices</text>
-                    </g>
-                    <g class="float b">
-                        <rect class="node" x="312" y="62"  width="146" height="56" rx="12"/>
-                        <text class="lbl"    x="385" y="86">Real-Time</text>
-                        <text class="lbl sm" x="385" y="103">Autonomous Platforms</text>
-                    </g>
-                    <g class="float c">
-                        <rect class="node" x="167" y="278" width="146" height="56" rx="12"/>
-                        <text class="lbl"    x="240" y="302">Large-Scale</text>
-                        <text class="lbl sm" x="240" y="319">ML Infrastructure</text>
-                    </g>
-
-                    <!-- core node -->
-                    <g>
-                        <rect class="node core" x="142" y="150" width="196" height="60" rx="14"/>
-                        <text class="lbl w"    x="240" y="176">Resource-Efficient</text>
-                        <text class="lbl w sm" style="fill:#b0cadb" x="240" y="194">Computing</text>
-                    </g>
-                </svg>
+                <!-- Same width as the blocks; default sentence, detail on hover -->
+                <div class="scale-detail">
+                    <p class="scale-pane scale-default active">Across these scales, resources are always the
+                    bottleneck &mdash; only the <b>nature</b> of the bottleneck changes with scale.
+                    <span class="hint">Hover over a scale to see how.</span></p>
+                    <p class="scale-pane" data-pane="small">At <b>small scale</b>, resources are too limited
+                    to reliably complete the task.
+                    <span class="goal"><span class="glabel">My goal is</span> to <u>enable</u> task execution
+                    under <u>limited resources</u>.</span></p>
+                    <p class="scale-pane" data-pane="moderate">At <b>moderate scale</b>, there are some
+                    resources, but not enough to meet users&rsquo; real-time demands.
+                    <span class="goal"><span class="glabel">My goal is</span> to <u>improve</u> task performance
+                    under <u>moderate resources</u>.</span></p>
+                    <p class="scale-pane" data-pane="large">At <b>large scale</b>, resources are abundant,
+                    yet the tasks are huge and just as resource-hungry.
+                    <span class="goal"><span class="glabel">My goal is</span> to <u>optimize</u> cost efficiency
+                    for <u>resource-hungry</u> tasks.</span></p>
+                </div>
             </div>
         </div>
     </section>
-
-    <hr class="divider">
 
     <!-- ===================== TABBED MODULES ===================== -->
     <section class="section" id="modules">
         <nav class="tabs-nav">
             <button class="tab-btn active" data-tab="publications">Publications</button>
-            <button class="tab-btn" data-tab="projects">Projects</button>
+            <button class="tab-btn" data-tab="projects">Projects &amp; Awards</button>
             <button class="tab-btn" data-tab="teaching">Teaching &amp; Supervision</button>
-            <button class="tab-btn" data-tab="talks">Talks</button>
-            <button class="tab-btn" data-tab="service">Service</button>
-            <button class="tab-btn" data-tab="awards">Awards</button>
+            <button class="tab-btn" data-tab="talks">Talks &amp; Services</button>
         </nav>
 
         <!-- ---------- Publications ---------- -->
@@ -179,113 +171,125 @@
             <ul class="pub-list">
                 <li><span class="conference-tag">VLDB'26</span>
                     <a href="https://arxiv.org/pdf/2507.04872" target="_blank" rel="noopener">SHARP: Shared State Reduction for Efficient Matching of Sequential Patterns</a><br>
-                    <span class="venue">Proceedings of the VLDB Endowment (VLDB 2026)</span><br>
+                    <span class="venue">Proceedings of the VLDB Endowment <span class="ccf">(CCF A)</span></span><br>
                     <span class="authors">Cong Yu, <b>Tuo Shi</b> <i>(co-first author)</i>, Matthias Weidlich, Bo Zhao</span>
                 </li>
                 <li><span class="conference-tag">SAA'25</span>
                     <a href="https://arxiv.org/abs/2510.05943" target="_blank" rel="noopener">EARL: Efficient Agentic Reinforcement Learning Systems for Large Language Models</a><br>
-                    <span class="venue">Workshop on Systems for Agentic AI @ ACM SOSP (SAA 2025)</span><br>
+                    <span class="venue">Workshop on Systems for Agentic AI @ ACM SOSP</span><br>
                     <span class="authors">Zheyue Tan, Mustapha Abdullahi, <b>Tuo Shi</b>, Huining Yuan, Zelai Xu, Chao Yu, Boxun Li, Bo Zhao</span>
                 </li>
                 <li><span class="conference-tag">INFOCOM'25</span>
                     <a href="https://ieeexplore.ieee.org/abstract/document/11044491" target="_blank" rel="noopener">Designing and Implementing AoI-Optimized Scheduling for Autonomous Driving Systems</a><br>
-                    <span class="venue">IEEE International Conference on Computer Communications (INFOCOM 2025)</span><br>
+                    <span class="venue">IEEE International Conference on Computer Communications <span class="ccf">(CCF A)</span></span><br>
                     <span class="authors">Chen Tang, <b>Tuo Shi</b>, Qian Xu, Kui Wu, Nan Guan, Jen-Ming Wu, Jianping Wang</span>
                 </li>
                 <li><span class="conference-tag">INFOCOM'24</span>
                     <a href="https://ieeexplore.ieee.org/abstract/document/10621120" target="_blank" rel="noopener">Minimizing Latency for Multi-DNN Inference on Resource-Limited CPU-Only Edge Devices</a><br>
-                    <span class="venue">IEEE International Conference on Computer Communications (INFOCOM 2024)</span><br>
+                    <span class="venue">IEEE International Conference on Computer Communications <span class="ccf">(CCF A)</span></span><br>
                     <span class="authors">Tao Wang, <b>Tuo Shi</b> <i>(corresponding author)</i>, Xiulong Liu, Jianping Wang, Bin Liu, Yechao She</span>
                 </li>
                 <li><span class="conference-tag">ICDCS'22</span>
                     <a href="https://ieeexplore.ieee.org/abstract/document/9912252" target="_blank" rel="noopener">Query Recombination: To Process a Large Number of Concurrent Top-k Queries towards IoT Data on an Edge Server</a><br>
-                    <span class="venue">IEEE International Conference on Distributed Computing Systems (ICDCS 2022)</span><br>
+                    <span class="venue">IEEE International Conference on Distributed Computing Systems <span class="ccf">(CCF B)</span></span><br>
                     <span class="authors"><b>Tuo Shi</b>, Zhipeng Cai, Yingshu Li</span>
                 </li>
                 <li><span class="conference-tag">ICDCS'19</span>
                     <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8885295" target="_blank" rel="noopener">The Energy-Data Dual Coverage in Battery-Free Sensor Networks</a><br>
-                    <span class="venue">IEEE International Conference on Distributed Computing Systems (ICDCS 2019)</span><br>
+                    <span class="venue">IEEE International Conference on Distributed Computing Systems <span class="ccf">(CCF B)</span></span><br>
                     <span class="authors"><b>Tuo Shi</b>, Zhipeng Cai, Jianzhong Li, Hong Gao</span>
                 </li>
                 <li><span class="conference-tag">INFOCOM'18</span>
                     <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8485808" target="_blank" rel="noopener">Coverage in Battery-Free Wireless Sensor Networks</a><br>
-                    <span class="venue">IEEE International Conference on Computer Communications (INFOCOM 2018)</span><br>
+                    <span class="venue">IEEE International Conference on Computer Communications <span class="ccf">(CCF A)</span></span><br>
                     <span class="authors"><b>Tuo Shi</b>, Jianzhong Li, Hong Gao, Zhipeng Cai</span>
                 </li>
                 <li><span class="conference-tag">INFOCOM'17</span>
                     <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8057073" target="_blank" rel="noopener">Constructing Connected Dominating Sets in Battery-Free Networks</a><br>
-                    <span class="venue">IEEE International Conference on Computer Communications (INFOCOM 2017)</span><br>
+                    <span class="venue">IEEE International Conference on Computer Communications <span class="ccf">(CCF A)</span></span><br>
                     <span class="authors"><b>Tuo Shi</b>, Siyao Cheng, Jianzhong Li, Hong Gao, Zhipeng Cai</span>
                 </li>
                 <li><span class="conference-tag">INFOCOM'16</span>
                     <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7524504" target="_blank" rel="noopener">Adaptive Connected Dominating Set Discovering Algorithm in Energy-Harvest Sensor Networks</a><br>
-                    <span class="venue">IEEE International Conference on Computer Communications (INFOCOM 2016)</span><br>
+                    <span class="venue">IEEE International Conference on Computer Communications <span class="ccf">(CCF A)</span></span><br>
                     <span class="authors"><b>Tuo Shi</b>, Siyao Cheng, Zhipeng Cai, Yingshu Li, Jianzhong Li</span>
                 </li>
             </ul>
 
-            <h3>Selected Journal Papers</h3>
+            <h3>Selected Journal Papers
+                <a class="muted-link" href="https://scholar.google.com/citations?user=KIZjoPEAAAAJ&hl=en" target="_blank" rel="noopener">(Google Scholar)</a>
+            </h3>
             <ul class="pub-list">
                 <li><span class="conference-tag">TVT'24</span>
                     <a href="https://ieeexplore.ieee.org/abstract/document/10738401" target="_blank" rel="noopener">Enhancing the Safety of Autonomous Driving Systems Via AoI-Optimized Task Scheduling</a><br>
-                    <span class="venue">IEEE Transactions on Vehicular Technology (TVT 2024)</span><br>
+                    <span class="venue">IEEE Transactions on Vehicular Technology</span><br>
                     <span class="authors"><b>Tuo Shi</b>, Qian Xu, Jianping Wang, Chenyuan Xu, Kui Wu, Kejie Lu, Chunming Qiao</span>
                 </li>
                 <li><span class="conference-tag">TMC'24</span>
                     <a href="https://ieeexplore.ieee.org/abstract/document/9940578" target="_blank" rel="noopener">An Efficient Processing Scheme for Concurrent Applications in the IoT Edge</a><br>
-                    <span class="venue">IEEE Transactions on Mobile Computing (TMC 2024)</span><br>
+                    <span class="venue">IEEE Transactions on Mobile Computing <span class="ccf">(CCF A)</span></span><br>
                     <span class="authors"><b>Tuo Shi</b>, Zhipeng Cai, Jianzhong Li, Hong Gao, Tie Qiu</span>
                 </li>
                 <li><span class="conference-tag">IOT-J'23</span>
                     <a href="https://ieeexplore.ieee.org/abstract/document/9951052" target="_blank" rel="noopener">Battery-Free Wireless Sensor Networks: A Comprehensive Survey</a><br>
-                    <span class="venue">IEEE Internet of Things Journal (IOT-J 2023)</span><br>
+                    <span class="venue">IEEE Internet of Things Journal <span class="ccf">(中科院一区)</span></span><br>
                     <span class="authors">Zhipeng Cai, Quan Chen, <b>Tuo Shi</b>, Tongxin Zhu, Kunyi Chen, Yingshu Li</span>
                 </li>
-                <li><span class="conference-tag">TNET'22</span>
+                <li><span class="conference-tag">TNET'23</span>
                     <a href="https://ieeexplore.ieee.org/abstract/document/9855450" target="_blank" rel="noopener">Services Management and Distributed Multihop Requests Routing in Mobile Edge Networks</a><br>
-                    <span class="venue">IEEE/ACM Transactions on Networking (TNET 2022)</span><br>
+                    <span class="venue">IEEE/ACM Transactions on Networking <span class="ccf">(CCF A)</span></span><br>
                     <span class="authors"><b>Tuo Shi</b>, Zhipeng Cai, Jianzhong Li, Hong Gao, Jiancheng Chen, Ming Yang</span>
+                </li>
+                <li><span class="conference-tag">TMC'22</span>
+                    <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9177292" target="_blank" rel="noopener">A Novel Framework for the Coverage Problem in Battery-Free Wireless Sensor Networks</a><br>
+                    <span class="venue">IEEE Transactions on Mobile Computing <span class="ccf">(CCF A)</span></span><br>
+                    <span class="authors"><b>Tuo Shi</b>, Jianzhong Li, Hong Gao, Zhipeng Cai</span>
                 </li>
                 <li><span class="conference-tag">TOSN'21</span>
                     <a href="https://dl.acm.org/doi/pdf/10.1145/3457123" target="_blank" rel="noopener">Joint Deployment Strategy of Battery-Free Sensor Networks with Coverage Guarantee</a><br>
-                    <span class="venue">ACM Transactions on Sensor Networks (TOSN 2021)</span><br>
+                    <span class="venue">ACM Transactions on Sensor Networks <span class="ccf">(CCF B)</span></span><br>
                     <span class="authors"><b>Tuo Shi</b>, Zhipeng Cai, Jianzhong Li, Hong Gao</span>
                 </li>
                 <li><span class="conference-tag">IOT-J'20</span>
                     <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9206577" target="_blank" rel="noopener">Distributed Query Processing in the Edge-Assisted IoT Data Monitoring System</a><br>
-                    <span class="venue">IEEE Internet of Things Journal (IOT-J 2020)</span><br>
+                    <span class="venue">IEEE Internet of Things Journal <span class="ccf">(中科院一区)</span></span><br>
                     <span class="authors">Zhipeng Cai, <b>Tuo Shi</b></span>
-                </li>
-                <li><span class="conference-tag">TMC'20</span>
-                    <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9177292" target="_blank" rel="noopener">A Novel Framework for the Coverage Problem in Battery-Free Wireless Sensor Networks</a><br>
-                    <span class="venue">IEEE Transactions on Mobile Computing (TMC 2020)</span><br>
-                    <span class="authors"><b>Tuo Shi</b>, Jianzhong Li, Hong Gao, Zhipeng Cai</span>
                 </li>
                 <li><span class="conference-tag">TOSN'19</span>
                     <a href="https://dl.acm.org/doi/pdf/10.1145/3352486" target="_blank" rel="noopener">Dominating Sets Construction in RF-Based Battery-Free Sensor Networks with Full Coverage Guarantee</a><br>
-                    <span class="venue">ACM Transactions on Sensor Networks (TOSN 2019)</span><br>
+                    <span class="venue">ACM Transactions on Sensor Networks <span class="ccf">(CCF B)</span></span><br>
                     <span class="authors"><b>Tuo Shi</b>, Siyao Cheng, Jianzhong Li, Hong Gao, Zhipeng Cai</span>
                 </li>
                 <li><span class="conference-tag">IOT-J'18</span>
                     <a href="https://ieeexplore.ieee.org/ielaam/6488907/8738925/8486629-aam.pdf" target="_blank" rel="noopener">Task Scheduling in Deadline-Aware Mobile Edge Computing Systems</a><br>
-                    <span class="venue">IEEE Internet of Things Journal (IOT-J 2018)</span><br>
+                    <span class="venue">IEEE Internet of Things Journal <span class="ccf">(中科院一区)</span></span><br>
                     <span class="authors">Tongxin Zhu, <b>Tuo Shi</b>, Jianzhong Li, Zhipeng Cai, Xun Zhou</span>
                 </li>
                 <li><span class="conference-tag">TNET'17</span>
                     <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7857833" target="_blank" rel="noopener">Exploring Connected Dominating Sets in Energy Harvest Networks</a><br>
-                    <span class="venue">IEEE/ACM Transactions on Networking (TNET 2017)</span><br>
+                    <span class="venue">IEEE/ACM Transactions on Networking <span class="ccf">(CCF A)</span></span><br>
                     <span class="authors"><b>Tuo Shi</b>, Siyao Cheng, Jianzhong Li, Zhipeng Cai</span>
                 </li>
             </ul>
         </div>
 
-        <!-- ---------- Projects (Fundings) ---------- -->
+        <!-- ---------- Projects & Awards ---------- -->
         <div class="tab-panel" id="projects">
+            <h3>Projects</h3>
             <ul class="plain-list">
                 <li><i>Resources Allocation in Edge Servers for the Sensory Data Query.</i>
                     <b>Young Scientists Fund of the National Natural Science Foundation of China, PI</b>, Jan. 2023 &ndash; Dec. 2025.</li>
                 <li><i>IoT Data Enhanced DNN Inference in Collaborative Edge Computing.</i>
                     <b>CCF-Baidu Open Fund, PI</b>, Aug. 2021 &ndash; Aug. 2022.</li>
+            </ul>
+            <h3>Awards</h3>
+            <ul class="plain-list">
+                <li>2024 &mdash; CIKM Distinguished Reviewer Award</li>
+                <li>2022 &mdash; ACM SIGCOMM China Doctoral Dissertation Award</li>
+                <li>2021 &mdash; Outstanding Ph.D. Graduate, Harbin Institute of Technology</li>
+                <li>2019 &mdash; Baidu Scholarship (Top 20)</li>
+                <li>2018 &mdash; National Scholarship for Ph.D. Candidate</li>
+                <li>2015 &mdash; National Scholarship for Ph.D. Candidate</li>
             </ul>
         </div>
 
@@ -308,8 +312,9 @@
             </ul>
         </div>
 
-        <!-- ---------- Talks ---------- -->
+        <!-- ---------- Talks & Services ---------- -->
         <div class="tab-panel" id="talks">
+            <h3>Talks</h3>
             <ul class="plain-list">
                 <li>May 2025: Invited Talk at Helsinki CS Theory Seminar. <i>Machine Learning Task Processing Under Resource Constraints</i>. Aalto University, Finland.</li>
                 <li>Aug. 2024: Invited Talk at China Database Strategic Seminar Series. <i>Task Processing on Resource-Limited Edge Networks</i>. Virtual Event, China.</li>
@@ -321,10 +326,10 @@
                 <li>May 2017: INFOCOM. <i>Constructing Connected Dominating Sets in Battery-Free Networks</i>. Atlanta, USA.</li>
                 <li>May 2016: INFOCOM. <i>Adaptive Connected Dominating Set Discovering Algorithm in Energy-Harvest Sensor Networks</i>. San Francisco, USA.</li>
             </ul>
-        </div>
-
-        <!-- ---------- Service ---------- -->
-        <div class="tab-panel" id="service">
+            <h3>Editorial Board</h3>
+            <ul class="plain-list">
+                <li>Associate Editor, <i>SN Computer Science</i> (Springer Nature)</li>
+            </ul>
             <h3>Program Committees</h3>
             <ul class="plain-list">
                 <li>ACM International Conference on Information and Knowledge Management (CIKM 2024)</li>
@@ -336,6 +341,7 @@
             <ul class="plain-list">
                 <li>IEEE Transactions on Mobile Computing (TMC)</li>
                 <li>ACM/IEEE Transactions on Networking (TON)</li>
+                <li>IEEE Journal on Selected Areas in Communications (JSAC)</li>
                 <li>IEEE Transactions on Knowledge and Data Engineering (TKDE)</li>
                 <li>IEEE Transactions on Parallel and Distributed Systems (TPDS)</li>
                 <li>IEEE Transactions on Vehicular Technology (TVT)</li>
@@ -343,18 +349,6 @@
                 <li>IEEE Internet of Things Journal (IOT-J)</li>
                 <li>IEEE Transactions on Network Science and Engineering (TNSE)</li>
                 <li>IEEE Transactions on Sensor Networks (TOSN)</li>
-            </ul>
-        </div>
-
-        <!-- ---------- Awards ---------- -->
-        <div class="tab-panel" id="awards">
-            <ul class="plain-list">
-                <li>2024 &mdash; <b>CIKM Distinguished Reviewer Award</b></li>
-                <li>2022 &mdash; <b>ACM SIGCOMM China Doctoral Dissertation Award</b></li>
-                <li>2021 &mdash; <b>Outstanding Ph.D. Graduate, Harbin Institute of Technology</b></li>
-                <li>2019 &mdash; <b>Baidu Scholarship (Top 20)</b></li>
-                <li>2018 &mdash; <b>National Scholarship for Ph.D. Candidate</b></li>
-                <li>2015 &mdash; <b>National Scholarship for Ph.D. Candidate</b></li>
             </ul>
         </div>
     </section>
@@ -375,6 +369,27 @@
             document.getElementById(id).classList.add('active');
         });
     });
+
+    // Scale stack -> detail panel (reveal on hover/focus, revert when leaving)
+    (function () {
+        var blocks = document.querySelectorAll('.scale-block');
+        var panes = document.querySelectorAll('.scale-pane');
+        var defaultPane = document.querySelector('.scale-default');
+
+        function show(scale) {
+            panes.forEach(function (p) { p.classList.remove('active'); });
+            var pane = scale ? document.querySelector('.scale-pane[data-pane="' + scale + '"]') : defaultPane;
+            (pane || defaultPane).classList.add('active');
+        }
+
+        blocks.forEach(function (block) {
+            var scale = block.getAttribute('data-scale');
+            block.addEventListener('mouseenter', function () { show(scale); });
+            block.addEventListener('focus', function () { show(scale); });
+            block.addEventListener('mouseleave', function () { show(null); });
+            block.addEventListener('blur', function () { show(null); });
+        });
+    })();
 
     // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
