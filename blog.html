@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuo Shi &ndash; 博客</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+
+<main class="wrap">
+    <div class="blog-index">
+        <header class="blog-head">
+            <div class="article-top">
+                <a class="back-link" href="index.html">&lsaquo;&nbsp;Tuo Shi</a>
+                <nav class="lang-switch">
+                    <span class="lang-current">中文</span><span class="lang-sep">·</span><a href="blog-en.html">EN</a>
+                </nav>
+            </div>
+            <h1 class="blog-title">Blogs</h1>
+            <p class="blog-lead">一些笔记、想法，和想分享的东西。</p>
+        </header>
+
+        <!-- Newest first. To add a post: copy posts/_template.html, fill it in,
+             and add one <li class="post-item"> below pointing to it. -->
+        <ul class="post-list">
+            <li class="post-item">
+                <span class="post-date">Jun 2026</span>
+                <a class="post-title" href="posts/agent-after-the-hype.html">当 Agent 的热潮退去，我们应该如何看待它？</a>
+                <p class="post-summary">当 Agent 的热潮退去，比起“能不能做事”，更值得问的也许是：它能不能稳定、可控、可审计地做事。</p>
+            </li>
+        </ul>
+    </div>
+</main>
+
+<footer class="footer">
+    &copy; <span id="year"></span> Tuo Shi &middot; Department of Computer Science, Aalto University
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

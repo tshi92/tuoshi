@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>As the Agent Hype Fades, How Should We See It? &ndash; Tuo Shi</title>
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css?v=1">
+</head>
+<body>
+
+<main class="wrap">
+    <article class="article">
+        <div class="article-top">
+            <a class="back-link" href="../blog.html">&lsaquo;&nbsp;All posts</a>
+            <nav class="lang-switch">
+                <a href="agent-after-the-hype.html">中文</a><span class="lang-sep">·</span><span class="lang-current">EN</span>
+            </nav>
+        </div>
+        <h1 class="article-title">As the Agent Hype Fades, How Should We See It?</h1>
+        <p class="article-meta">Jun 2026 &middot; Tuo Shi</p>
+
+        <div class="article-body">
+            <p>From OpenClaw at the start of the year, to the &ldquo;harness&rdquo; concept Anthropic introduced later, to Hermes &mdash; which stirred up another wave of attention two months ago &mdash; this whole tide raised by agents and their offshoots seems to be slowly settling down.</p>
+
+            <p>OpenClaw is rarely mentioned anymore; the buzz around Hermes is fading too. Even the conversation around Claude Code has drifted from the initial amazement toward grumbling about its later versions.</p>
+
+            <p>When yesterday&rsquo;s surprises become today&rsquo;s habits, and yesterday&rsquo;s fervor cools into calm, perhaps it is worth asking the question again:</p>
+
+            <p><b>How should we really think about agents?</b></p>
+
+            <p>Let me start with two recent experiences.</p>
+
+            <h2>1. Hermes&rsquo;s Self-Evolution</h2>
+
+            <p>I have been using Hermes as a personal assistant for everyday learning and work. Two of its capabilities stand out: its Memory-management mechanism, and its ability to distill experience into Skills.</p>
+
+            <p>I once came across a Skill in the &ldquo;recently installed&rdquo; list of the Skill-management tool (HarnessKit<img class="hk-logo" src="../img/logos/harnesskit.png" alt="">) that I had <b>never installed myself</b> &mdash; it turned out to have been distilled automatically by Hermes from an earlier task.</p>
+
+            <p>It had not merely remembered some information; it had compressed one concrete experience into a reusable working method. And this Skill could, in turn, be shared with other agents.</p>
+
+            <p>In other words, knowledge can be distilled from one agent&rsquo;s experience and then transferred into another agent&rsquo;s workflow.</p>
+
+            <p>Between agents, a way of propagating knowledge has emerged.</p>
+
+            <h2>2. Codex Didn&rsquo;t Fully Follow the Skill</h2>
+
+            <p>I once wrote a Skill that explicitly required the output to be listed item by item. But the last time I used it, Codex ended up rendering the content as a table. This Skill had been used many times before, and most of the time it worked fine. This time, though, it did not fully follow the instructions in the Skill.</p>
+
+            <p>This points to something else: a Skill is not a rule engine; it is not a compiler; it is not a formal constraint.<br>
+            In the end it still has to pass through the model&rsquo;s understanding, choices, and execution. And as long as there is a model in the middle, there will always be deviation.</p>
+
+            <p>These two examples:</p>
+
+            <p>One is a pleasant surprise: agents really do seem to be starting to acquire some capacity to learn and to accumulate.<br>
+            One is a quiet worry: even when knowledge has been written into a Skill, an agent will not necessarily execute it in a stable, strict, and predictable way.</p>
+
+            <h2>3. What Agents Bring Is More Than Efficiency</h2>
+
+            <p>The progress of human civilization depends, to a large degree, on the circulation of knowledge.</p>
+
+            <p><b><i>From word of mouth to inscriptions on clay tablets;<br>
+            from bamboo slips and paper to movable type;<br>
+            from encyclopedias to search engines;<br>
+            from browsing web pages to conversing with large models.</i></b></p>
+
+            <p>Every change in the medium of knowledge has changed the speed at which knowledge spreads.<br>
+            And every increase in that speed has reshaped how society collaborates and how technology advances.</p>
+
+            <p>Now, in the age of agents, the circulation of knowledge seems to have been accelerated once again.</p>
+
+            <p>An experienced engineer can write their hands-on experience into a Skill. Someone from outside that field only needs to load that Skill into their own agent to gain &mdash; almost instantly &mdash; a portion of the operational ability that would otherwise take years to accumulate.</p>
+
+            <p>And when agents can summarize and distill Skills on their own, knowledge will travel faster still. Because this time, even the step of &ldquo;an expert manually organizing experience&rdquo; may be partly automated.</p>
+
+            <p>This is, of course, exciting. But it also raises a deeper question:</p>
+
+            <p><b>The recipient of knowledge is shifting from humans to agents.</b></p>
+
+            <p>When a Skill is deployed inside an agent, do we really understand that skill?<br>
+            When an agent spends tokens to complete a task for us, do we really know how it understood those instructions?<br>
+            When it produces a seemingly reasonable result, can we really tell whether it strictly followed the rules we gave it?</p>
+
+            <p>In the past, we worried about whether the model would talk nonsense.<br>
+            Now, we also have to worry about whether the agent will misunderstand, misuse, or omit &mdash; or even confidently carry out an action that departs from what we meant.</p>
+
+            <h2>4. After the Hype Fades, What Remains of the Agent?</h2>
+
+            <p>In the past, discussions of agents were mostly about whether they &ldquo;can get things done.&rdquo;<br>
+            Next, the question that really matters may become: can they get things done in a way that is stable, controllable, and auditable.</p>
+
+            <p>Once an agent begins to remember, summarize, call tools, and reuse Skills, it is no longer merely a model that generates answers &mdash; it gradually becomes an execution system that takes part in real workflows. How to manage it, monitor it, and understand and constrain its reasoning and execution may be a question worth continuing to discuss after the agent hype has faded.</p>
+        </div>
+    </article>
+</main>
+
+<footer class="footer">
+    &copy; <span id="year"></span> Tuo Shi &middot; Department of Computer Science, Aalto University
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

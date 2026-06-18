@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>当 Agent 的热潮退去，我们应该如何看待它？ &ndash; Tuo Shi</title>
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css?v=1">
+</head>
+<body>
+
+<main class="wrap">
+    <article class="article">
+        <div class="article-top">
+            <a class="back-link" href="../blog.html">&lsaquo;&nbsp;All posts</a>
+            <nav class="lang-switch">
+                <span class="lang-current">中文</span><span class="lang-sep">·</span><a href="agent-after-the-hype-en.html">EN</a>
+            </nav>
+        </div>
+        <h1 class="article-title">当 Agent 的热潮退去，我们应该如何看待它？</h1>
+        <p class="article-meta">Jun 2026 &middot; Tuo Shi</p>
+
+        <div class="article-body">
+            <p>从年初的 OpenClaw，到后来 Anthropic 推出的 harness 概念，再到两月前再度引发热度的 Hermes，这一波由 Agent 及其衍生技术掀起的浪潮，似乎正在慢慢归于平静。</p>
+
+            <p>OpenClaw 已经很少被人提起；Hermes 的热度也在逐渐散去。大家对 Claude Code 的讨论，也从最初的惊艳，慢慢转向对后续版本的吐槽。</p>
+
+            <p>当过去的惊喜变成今天的习惯，当曾经的狂热逐渐回到冷静，或许可以重新问一个问题：</p>
+
+            <p><b>到底应该如何看待 Agent？</b></p>
+
+            <p>先从最近的两段使用经历说起。</p>
+
+            <h2>1. Hermes 的自主进化</h2>
+
+            <p>我最近常用 Hermes 作为日常学习和工作中的个人助理。它最值得注意的两点，是 Memory 管理机制，以及把经验沉淀为 Skill 的能力。</p>
+
+            <p>我曾在 Skill 管理工具（HarnessKit<img class="hk-logo" src="../img/logos/harnesskit.png" alt="">）的最近安装列表中，发现了一个我<b>从未安装过的 Skill</b>，原来是 Hermes 根据之前的一个任务自动总结出来的。</p>
+
+            <p>它不只是记住了某些信息，还把一次具体经验，压缩成了一种可以复用的工作方法。而且，这个 Skill 又可以分享给其他 Agent 使用。</p>
+
+            <p>也就是说，知识可以从一个 Agent 的经验里被总结出来，再迁移到另一个 Agent 的工作流里。</p>
+
+            <p>Agent 之间，有了一种知识传播方式。</p>
+
+            <h2>2. Codex 没有完全遵守 Skill</h2>
+
+            <p>我之前写过一个 Skill，里面明确要求：输出文本需要按照条目逐一列出。但最近一次，Codex 最后却把内容画成了表格。这个 Skill 之前已经被使用过很多次，大多数时候都能正常工作。但这一次，它没有完全按照 Skill 里的指令执行。</p>
+
+            <p>这说明了另一件事：Skill 并不是规则引擎；它不是编译器；它不是形式化约束。<br>
+            它最终仍然要经过模型的理解、选择和执行。而只要中间还有模型，就一定还会有偏差。</p>
+
+            <p>这两个例子：</p>
+
+            <p>一个带来了惊喜：Agent 似乎真的开始具备某种学习和沉淀能力。<br>
+            一个带来了隐忧：即便知识已经被写成 Skill，Agent 也不一定总能稳定、严格、可预期地执行它。</p>
+
+            <h2>3. Agent 带来的，不只是效率提升</h2>
+
+            <p>人类文明的进步，很大程度上依赖于知识的流转。</p>
+
+            <p><b><i>从口口相传，到泥板刻字；<br>
+            从竹简纸张，到活字印刷；<br>
+            从百科全书，到搜索引擎；<br>
+            从翻阅网页，到与大模型对话。</i></b></p>
+
+            <p>每一次知识载体的变化，都在改变知识传播的速度。<br>
+            每一次知识传播速度的提升，也都在重新塑造社会协作和科技发展的方式。</p>
+
+            <p>而到了 Agent 时代，知识的流转似乎又被加速了一次。</p>
+
+            <p>一个经验丰富的工程师，可以把自己的实践经验写成 Skill。另一个非专业领域的人，只需要把这个 Skill 加载到自己的 Agent 中，就可以几乎立刻获得一部分原本需要长期积累的操作能力。</p>
+
+            <p>而当 Agent 可以自我总结、自我沉淀 Skill 的时候，知识传递的速度还会更快。因为这一次，甚至连“由专家手动整理经验”的环节，都有可能被部分自动化。</p>
+
+            <p>这当然是令人兴奋的。但它也带来了一个更深的问题：</p>
+
+            <p><b>知识的受体，正在从人转移到 Agent。</b></p>
+
+            <p>当 Skill 部署在 Agent 里时，我们真的了解这项技能吗？<br>
+            当 Agent 消耗 token 替我们完成任务时，我们真的知道它如何理解了这些指令吗？<br>
+            当它输出一个看似合理的结果时，我们真的能判断它有没有严格执行我们给它的规则吗？</p>
+
+            <p>过去，我们担心的是模型会不会胡说。<br>
+            现在，我们还要担心的是 Agent 会不会误解、误用、遗漏，甚至自信地执行一个偏离原意的动作。</p>
+
+            <h2>4. 当热潮退去之后，Agent 剩下什么？</h2>
+
+            <p>过去大家讨论 Agent，更多是在讨论它“能不能做事”；<br>
+            接下来，真正重要的问题可能会变成：它能不能稳定、可控、可审计地做事。</p>
+
+            <p>当 Agent 开始记忆、总结、调用工具、复用 Skill 时，它就不再只是一个会生成答案的模型，而逐渐变成了一套参与真实工作流的执行系统。如何管理它、监控它，并理解和约束它的推理与执行过程，可能是 Agent 热潮退去之后，一个值得继续讨论的问题。</p>
+        </div>
+    </article>
+</main>
+
+<footer class="footer">
+    &copy; <span id="year"></span> Tuo Shi &middot; Department of Computer Science, Aalto University
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
